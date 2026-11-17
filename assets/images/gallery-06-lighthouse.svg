@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a1e33"/><stop offset=".55" stop-color="#254a5c"/><stop offset="1" stop-color="#c78f73"/></linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#335f6d"/><stop offset="1" stop-color="#041a29"/></linearGradient>
+    <radialGradient id="beam" cx="0%" cy="50%" r="100%"><stop offset="0" stop-color="#ffe6b6" stop-opacity=".6"/><stop offset="1" stop-color="#ffe6b6" stop-opacity="0"/></radialGradient>
+    <filter id="b"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".75" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1000" height="700" fill="url(#sky)"/>
+  <g fill="#e8f4ef" opacity=".7"><circle cx="120" cy="90" r="2"/><circle cx="260" cy="160" r="1.5"/><circle cx="420" cy="70" r="2"/><circle cx="680" cy="120" r="1.5"/><circle cx="860" cy="80" r="2"/><circle cx="940" cy="210" r="1.5"/></g>
+  <circle cx="760" cy="330" r="48" fill="#f3c8a0" opacity=".7" filter="url(#b)"/>
+  <rect y="420" width="1000" height="280" fill="url(#sea)"/>
+  <path d="M0 420 L1000 420 L1000 700 L0 700Z" fill="none"/>
+  <g stroke="#bfe0dc" stroke-width="2" fill="none" opacity=".2"><path d="M0 480 q80 -14 160 0 t160 0"/><path d="M600 540 q80 -14 160 0 t160 0"/><path d="M120 620 q100 -18 200 0 t200 0"/></g>
+  <path d="M0 470 L120 430 L260 450 L330 420 L360 700 L0 700Z" fill="#0b2b3b"/>
+  <g transform="translate(0 0)">
+    <path d="M210 430 L250 250 L300 250 L340 430Z" fill="#e5ded0"/>
+    <path d="M210 430 L340 430 L352 448 L198 448Z" fill="#c9bfae"/>
+    <path d="M242 250 L308 250 L316 214 L234 214Z" fill="#173a4a"/>
+    <path d="M226 214 L324 214 L316 196 L234 196Z" fill="#0d2c3b"/>
+    <circle cx="275" cy="232" r="13" fill="#ffe4ac"/>
+    <circle cx="275" cy="232" r="34" fill="#ffe4ac" opacity=".4" filter="url(#b)"/>
+    <path d="M275 232 L1000 90 L1000 390 Z" fill="url(#beam)" opacity=".55"/>
+    <path d="M255 300 L295 300 L298 330 L252 330Z" fill="#173a4a"/>
+  </g>
+  <rect width="1000" height="700" filter="url(#g)" opacity=".13" style="mix-blend-mode:overlay"/>
+</svg>

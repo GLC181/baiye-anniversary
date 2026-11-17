@@ -1,0 +1,16 @@
+# CodeBuddy 项目数据
+.codebuddy/
+
+# 原始素材（体积过大，1.3GB，网页不依赖）
+百业一周年1/
+
+# 未用于网页的文件
+星空1.jpeg
+
+# 系统与编辑器文件
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+.idea/
+.vscode/

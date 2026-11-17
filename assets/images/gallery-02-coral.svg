@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#187e90"/><stop offset=".6" stop-color="#0a4a63"/><stop offset="1" stop-color="#032637"/></defs>
+    <filter id="b"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".78" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1000" height="700" fill="url(#bg)"/>
+  <g stroke="#cdf7f2" opacity=".12" stroke-width="3" fill="none"><path d="M120 0 L360 700"/><path d="M420 0 L560 700"/><path d="M760 0 L900 700"/></g>
+  <path d="M0 640 q250 -60 500 -10 t500 -20 L1000 700 L0 700Z" fill="#0a3345"/>
+  <g stroke-linecap="round" fill="none">
+    <g stroke="#e08a6d" stroke-width="18" opacity=".9"><path d="M180 660 q-20 -120 30 -200 q30 -50 0 -110"/><path d="M210 480 q70 -30 80 -100"/><path d="M205 540 q-70 -30 -80 -90"/></g>
+    <g stroke="#f0b08a" stroke-width="12" opacity=".85"><path d="M300 670 q10 -140 -40 -220 q-30 -50 0 -110"/><path d="M260 470 q-60 -40 -60 -110"/><path d="M268 530 q60 -20 80 -80"/></g>
+    <g stroke="#d97b7b" stroke-width="16" opacity=".8"><path d="M760 670 q30 -150 -20 -240 q-30 -60 0 -120"/><path d="M740 460 q70 -50 70 -120"/><path d="M750 520 q-70 -40 -80 -100"/></g>
+    <g stroke="#e8a889" stroke-width="10" opacity=".85"><path d="M880 680 q-10 -110 40 -180"/><path d="M920 520 q50 -40 50 -100"/></g>
+    <g stroke="#7fd9c9" stroke-width="9" opacity=".75"><path d="M520 680 q20 -160 -30 -250"/><path d="M490 470 q-60 -40 -70 -110"/><path d="M500 540 q70 -30 80 -90"/></g>
+  </g>
+  <g fill="#e9f6e6" opacity=".8">
+    <path d="M420 240 q18 -16 40 0 q-20 -10 -40 0Z"/><path d="M458 238 l18 -11 l-4 14Z"/>
+    <path d="M600 320 q16 -14 36 0 q-18 -9 -36 0Z"/><path d="M634 318 l16 -10 l-4 12Z"/>
+    <path d="M360 390 q14 -12 32 0 q-16 -8 -32 0Z"/>
+    <path d="M700 270 q15 -13 34 0 q-17 -8 -34 0Z"/>
+  </g>
+  <g fill="#bff5f0" opacity=".3"><circle cx="380" cy="200" r="3"/><circle cx="640" cy="250" r="4"/><circle cx="560" cy="420" r="2"/><circle cx="820" cy="360" r="3"/></g>
+  <rect width="1000" height="700" filter="url(#g)" opacity=".13" style="mix-blend-mode:overlay"/>
+</svg>

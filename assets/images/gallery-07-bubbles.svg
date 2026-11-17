@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a9fb0"/><stop offset=".4" stop-color="#0d5b78"/><stop offset="1" stop-color="#021c2d"/></linearGradient>
+    <radialGradient id="top" cx="50%" cy="0%" r="90%"><stop offset="0" stop-color="#d6fbff" stop-opacity=".6"/><stop offset="1" stop-color="#d6fbff" stop-opacity="0"/></radialGradient>
+    <filter id="b"><feGaussianBlur stdDeviation="8"/></filter>
+    <filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1000" height="700" fill="url(#bg)"/>
+  <rect width="1000" height="700" fill="url(#top)"/>
+  <g fill="none" stroke="#dffcff" opacity=".55">
+    <circle cx="180" cy="520" r="34" stroke-width="2"/><circle cx="212" cy="420" r="18" stroke-width="2"/><circle cx="170" cy="330" r="26" stroke-width="2"/>
+    <circle cx="420" cy="590" r="46" stroke-width="2.5"/><circle cx="460" cy="450" r="22" stroke-width="2"/><circle cx="400" cy="350" r="30" stroke-width="2"/><circle cx="448" cy="250" r="14" stroke-width="1.5"/>
+    <circle cx="700" cy="540" r="28" stroke-width="2"/><circle cx="740" cy="430" r="40" stroke-width="2.5"/><circle cx="690" cy="310" r="18" stroke-width="2"/><circle cx="730" cy="210" r="24" stroke-width="2"/>
+    <circle cx="880" cy="600" r="20" stroke-width="2"/><circle cx="910" cy="490" r="32" stroke-width="2"/><circle cx="860" cy="380" r="14" stroke-width="1.5"/>
+    <circle cx="310" cy="180" r="12" stroke-width="1.5"/><circle cx="590" cy="160" r="16" stroke-width="1.5"/><circle cx="820" cy="140" r="10" stroke-width="1.5"/>
+  </g>
+  <g fill="#ffffff" opacity=".16"><circle cx="170" cy="510" r="10"/><circle cx="410" cy="578" r="14"/><circle cx="730" cy="420" r="12"/><circle cx="900" cy="480" r="8"/></g>
+  <g filter="url(#b)" opacity=".35"><path d="M300 0 L420 0 L500 700 L360 700Z" fill="#cdf7f2" opacity=".3"/><path d="M700 0 L760 0 L700 700 L580 700Z" fill="#cdf7f2" opacity=".25"/></g>
+  <rect width="1000" height="700" filter="url(#g)" opacity=".12" style="mix-blend-mode:overlay"/>
+</svg>

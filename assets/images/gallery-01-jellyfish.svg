@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="75%"><stop offset="0" stop-color="#124b6b"/><stop offset=".55" stop-color="#072c45"/><stop offset="1" stop-color="#021525"/></radialGradient>
+    <radialGradient id="bell" cx="50%" cy="35%" r="65%"><stop offset="0" stop-color="#e5fffb" stop-opacity=".95"/><stop offset=".45" stop-color="#8fe6e0" stop-opacity=".6"/><stop offset="1" stop-color="#4aa6c4" stop-opacity=".08"/></radialGradient>
+    <filter id="b"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1000" height="700" fill="url(#bg)"/>
+  <g fill="#bff5f0" opacity=".45"><circle cx="120" cy="120" r="2"/><circle cx="180" cy="220" r="3"/><circle cx="850" cy="160" r="2"/><circle cx="910" cy="280" r="4"/><circle cx="760" cy="90" r="2"/><circle cx="300" cy="580" r="3"/><circle cx="680" cy="620" r="2"/></g>
+  <g filter="url(#b)" opacity=".5"><ellipse cx="500" cy="300" rx="240" ry="180" fill="#5fd8d2" opacity=".25"/></g>
+  <g>
+    <path d="M330 300 Q340 170 500 160 Q660 170 670 300 Q620 330 500 330 Q380 330 330 300Z" fill="url(#bell)"/>
+    <path d="M330 300 Q340 170 500 160 Q660 170 670 300" fill="none" stroke="#dffff9" stroke-width="3" opacity=".75"/>
+    <g fill="none" stroke="#9fe8e4" stroke-linecap="round" opacity=".7">
+      <path d="M370 322 q-30 120 10 220 t-10 150" stroke-width="3"/>
+      <path d="M420 328 q-10 140 20 240 t-16 170" stroke-width="2.5"/>
+      <path d="M470 330 q20 130 -10 230 t20 180" stroke-width="3"/>
+      <path d="M530 330 q-20 140 14 240 t-8 170" stroke-width="2.5"/>
+      <path d="M580 326 q30 120 -6 220 t14 150" stroke-width="3"/>
+      <path d="M630 318 q40 100 6 190" stroke-width="2"/>
+    </g>
+    <g stroke="#c9fff7" stroke-width="2" opacity=".5"><path d="M450 250 q50 -26 100 0"/><path d="M430 285 q70 -30 140 0"/></g>
+  </g>
+  <g opacity=".5"><ellipse cx="500" cy="300" rx="175" ry="90" fill="none" stroke="#bff5f0" stroke-width="1" filter="url(#b)"/></g>
+  <rect width="1000" height="700" filter="url(#g)" opacity=".13" style="mix-blend-mode:overlay"/>
+</svg>

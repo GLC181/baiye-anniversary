@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a8a9c"/><stop offset=".55" stop-color="#0a536e"/><stop offset="1" stop-color="#032539"/></defs>
+    <radialGradient id="shell" cx="45%" cy="35%" r="70%"><stop offset="0" stop-color="#4f8f86"/><stop offset="1" stop-color="#173f4c"/></radialGradient>
+    <filter id="b"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1000" height="700" fill="url(#bg)"/>
+  <g filter="url(#b)" opacity=".5"><path d="M300 -20 L420 -20 L560 700 L400 700Z" fill="#c8fbff" opacity=".2"/><path d="M720 -20 L790 -20 L700 700 L600 700Z" fill="#c8fbff" opacity=".15"/></g>
+  <g transform="translate(500 350) rotate(-12) translate(-500 -350)">
+    <path d="M330 300 q-70 -20 -110 -70 q40 -10 80 10" fill="#123c49"/>
+    <path d="M670 300 q70 -20 110 -70 q-40 -10 -80 10" fill="#123c49"/>
+    <path d="M360 270 q-60 -80 -20 -130 q50 20 60 80" fill="#123c49"/>
+    <path d="M640 270 q60 -80 20 -130 q-50 20 -60 80" fill="#123c49"/>
+    <path d="M500 190 q130 0 160 120 q20 110 -80 170 q-80 40 -160 0 q-100 -60 -80 -170 q30 -120 160 -120Z" fill="url(#shell)" stroke="#0d3442" stroke-width="6"/>
+    <g stroke="#8fd0c0" stroke-width="2.5" fill="none" opacity=".55">
+      <path d="M420 220 q80 -40 160 0"/><path d="M390 300 q110 -50 220 0"/><path d="M410 390 q90 -40 180 0"/>
+      <path d="M500 200 L500 480"/><path d="M430 230 L450 450"/><path d="M570 230 L550 450"/>
+    </g>
+    <g fill="#0d3442" opacity=".55"><circle cx="455" cy="270" r="16"/><circle cx="545" cy="270" r="16"/><circle cx="500" cy="350" r="20"/><circle cx="430" cy="380" r="12"/><circle cx="570" cy="380" r="12"/></g>
+    <path d="M465 200 q35 -40 70 0" fill="none" stroke="#0d3442" stroke-width="5"/>
+  </g>
+  <g fill="#c9f5ee" opacity=".55"><path d="M180 180 q16 -14 36 0 q-18 -9 -36 0Z"/><path d="M214 178 l16 -10 l-4 12Z"/><path d="M820 520 q14 -12 32 0 q-16 -8 -32 0Z"/></g>
+  <g fill="#bff5f0" opacity=".3"><circle cx="220" cy="260" r="3"/><circle cx="260" cy="220" r="5"/><circle cx="800" cy="200" r="4"/><circle cx="860" cy="280" r="3"/></g>
+  <rect width="1000" height="700" filter="url(#g)" opacity=".12" style="mix-blend-mode:overlay"/>
+</svg>

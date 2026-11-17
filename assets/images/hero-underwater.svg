@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2aa2ac"/>
+      <stop offset=".28" stop-color="#0f6a83"/>
+      <stop offset=".68" stop-color="#063b57"/>
+      <stop offset="1" stop-color="#021a2a"/>
+    </linearGradient>
+    <linearGradient id="ray" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d9fbff" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#9fe9e6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="lightSpot" cx="50%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#c8fbff" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#c8fbff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#water)"/>
+  <ellipse cx="800" cy="0" rx="900" ry="520" fill="url(#lightSpot)"/>
+  <g filter="url(#blur)">
+    <path d="M280 -40 L440 -40 L760 900 L560 900 Z" fill="url(#ray)" opacity=".7"/>
+    <path d="M620 -40 L700 -40 L900 900 L790 900 Z" fill="url(#ray)" opacity=".85"/>
+    <path d="M960 -40 L1120 -40 L1040 900 L860 900 Z" fill="url(#ray)" opacity=".6"/>
+    <path d="M1300 -40 L1380 -40 L1220 900 L1120 900 Z" fill="url(#ray)" opacity=".45"/>
+  </g>
+  <g fill="none" stroke="#bff5f0" stroke-linecap="round" opacity=".15">
+    <path d="M0 250 q200 -40 400 0 t400 0 t400 0 t400 0" stroke-width="3"/>
+    <path d="M0 330 q240 -46 480 0 t480 0 t480 0" stroke-width="2"/>
+    <path d="M0 420 q180 -34 360 0 t360 0 t360 0 t360 0" stroke-width="2.5"/>
+  </g>
+  <g fill="#bff5f0" opacity=".35">
+    <circle cx="240" cy="240" r="5"/><circle cx="268" cy="196" r="3"/><circle cx="222" cy="158" r="4"/>
+    <circle cx="1280" cy="200" r="4"/><circle cx="1312" cy="150" r="6"/><circle cx="1260" cy="112" r="3"/>
+    <circle cx="1060" cy="320" r="3"/><circle cx="1090" cy="270" r="5"/><circle cx="1044" cy="232" r="2"/>
+  </g>
+  <g fill="none" stroke="#cdf7f2" opacity=".28">
+    <circle cx="240" cy="240" r="10" stroke-width="1.5"/><circle cx="1312" cy="150" r="12" stroke-width="1.5"/>
+  </g>
+  <g fill="#021e2d" opacity=".92">
+    <path d="M0 900 L0 720 q60 -110 96 -20 q26 -84 62 12 q34 -70 66 16 q40 -96 84 -8 q30 -60 66 22 L374 900 Z"/>
+    <path d="M1226 900 q36 -92 74 -12 q28 -76 66 8 q38 -84 78 -4 q34 -70 72 10 q34 -64 84 -4 L1600 900 Z"/>
+  </g>
+  <g fill="#7fd9d2" opacity=".55">
+    <path d="M520 470 q22 -20 48 0 q-24 -12 -48 0Z"/><path d="M566 462 l20 -12 l-4 16Z"/>
+    <path d="M900 390 q16 -14 36 0 q-18 -9 -36 0Z"/><path d="M934 386 l14 -9 l-3 12Z"/>
+    <path d="M1110 540 q20 -18 44 0 q-22 -11 -44 0Z"/><path d="M1152 536 l18 -11 l-4 14Z"/>
+    <path d="M690 640 q14 -12 32 0 q-16 -8 -32 0Z"/>
+  </g>
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".12" style="mix-blend-mode:overlay"/>
+</svg>
